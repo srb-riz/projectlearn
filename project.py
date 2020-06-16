@@ -119,4 +119,19 @@ Switching on camera from habitat with rabbits...
 (" ~----( ~   Y.  )
 It seems there will be more rabbits soon!"""
 
+animals = [camel, lion, deer, goose, bat, rabbit]
+condition = True
+print("choose from habitat number-0 to habitat number-5 to see the animal in it")
 
+while condition:
+    habitat_number = input("Which habitat # do you need? > ")
+    if habitat_number != 'exit':
+        print(animals[int(habitat_number)])
+        print("------------------------")
+    elif habitat_number == 'exit':
+        condition = False
+        print()
+        print()
+        print("The end of the program. To check another habitat restart the watcher please.")
+        print("See you!")
+        
